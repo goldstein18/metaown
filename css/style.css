@@ -285,7 +285,10 @@ height: 440px;
     display: flex;
     justify-content: center;
     align-items: center;
+
     background-color: var(--bg-clr);
+
+    background-color: rgb(15, 14, 14);
 
     padding: 50px;
 }
@@ -564,7 +567,11 @@ footer img {
 /* last footer */
 
 .last-footer {
+
     background: var(--bg-clr);
+
+
+
     display: flex;
     justify-content: space-around;
     align-items: end;
