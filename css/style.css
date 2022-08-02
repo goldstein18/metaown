@@ -16,6 +16,7 @@
     --call-to-action: #e93d4c;
     --header-clr: black;
     --white: #fff;
+    --footer:rgba(17, 14, 14, 0.982);
 
 }
 
@@ -23,10 +24,10 @@ body,
 html {
     height: 100%;
     background: var(--bg-clr);
+    width: 100%;
     color: #fff;
     max-width: 1790px;
     margin: auto;
-    width: 100%;
     font-family: 'Gotham' !important;
 }
 
@@ -162,7 +163,7 @@ span {
 
     border: none;
     padding: 20px 30px;
-    margin-bottom: 12px 0px;
+    margin-bottom: 12px;
 }
 .hero-btn:hover {
     background-color:#7289DA;
@@ -182,8 +183,8 @@ span {
     font-weight: bolder;
 }
 
-.hero-vid video {
-
+.hero-vid img {
+height: 440px;
     width: 640px;
 
 }
@@ -225,7 +226,7 @@ span {
 
 .courses-grid {
 
-    gap: 20px;
+    gap: 30px;
     margin: auto;
     margin-top: 40px;
     display: grid;
@@ -237,17 +238,18 @@ span {
 }
 
 .course-grid-div {
-    box-shadow: -1px 1px 21px 9px #3c75d141;
+    box-shadow: -1px 1px 11px 1px var(--call-to-action);
 
     /* box-shadow: 0px 10px 20px #3c75d141; */
 
     display: flex;
     justify-content: start;
     flex-direction: column;
+ 
     padding: 20px;
     padding-bottom: 30px;
-    width: 280px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
 }
 
 .course-grid h4 {
@@ -280,7 +282,7 @@ span {
 .books-section {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     background-color: rgb(15, 14, 14);
 
     padding: 50px;
@@ -298,14 +300,14 @@ span {
 }
 
 .books-section .hero-text i {
-    background: #01384c;
+    background:var(--call-to-action);
     padding: 5px;
     border-radius: 50%;
     color: rgba(255, 255, 255, 0.815);
 }
 
 .books-section .hero-text .choices {
-    margin: 25px 0px;
+    margin: 30px 0px;
 }
 
 .choices h4 {
@@ -318,6 +320,8 @@ span {
     padding: 4px;
     margin-left: 6px;
     font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 1px;
 }
 
 .hero-img img {
@@ -377,10 +381,13 @@ span {
 
 .author-title p {
     font-size: 18px;
+  width:80%;
+  margin:20px auto;
 }
 
 .author-title h1 {
     font-size: 40px;
+    margin: 20px 0px;
 }
 
 .author-profiles {
@@ -390,9 +397,12 @@ span {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
 }
-
+.author-title img{
+    margin: 20px 0px;
+}
 .author-profiles img {
     margin-bottom: 20px;
+    /* margin: 40px 0px; */
 }
 
 .author-profiles img,
@@ -416,7 +426,7 @@ h2 {
 /* community */
 .community-section {
     width: 100%;
-    background-image: url("../img/two.jpg");
+    background-image: url("../img/wewant.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -524,7 +534,9 @@ footer {
     text-align: center;
     height: 300px;
     border-bottom: 1px solid rgb(255, 255, 255);
-    background: rgba(34, 34, 34, 0.641);
+    /* background: rgba(34, 34, 34, 0.641);
+     */
+     background: var(--footer);
 }
 
 footer div {
@@ -548,7 +560,7 @@ footer img {
 /* last footer */
 
 .last-footer {
-    background: rgba(34, 34, 34, 0.641);
+    background: var(--footer);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -697,7 +709,7 @@ footer img {
 
     .courses_outer .hero-btn,
     .enterpren .hero-btn {
-        padding: 8px 12px;
+        /* padding: 8px 12px; */
         font-size: 18px;
     }
 
@@ -746,7 +758,16 @@ footer img {
     .enterpreneur-section{
         padding: 0;
     }
-
+    .hero-vid img{
+        width: 100%;
+        height: auto;
+    }
+    .author-title p {
+        font-size: 18px;
+        padding: 10px 0px;
+      width:100%;
+      margin:20px auto;
+    }
 }
 
 @media screen and (max-width:612px) {
@@ -767,9 +788,12 @@ footer img {
         line-height: 1.7;
 
     }
+.community-section{
+    padding: 10px 0px;
+}
 
-    .hero-btn {
-        padding: 8px 12px;
+.community-section .hero-btn {
+    margin: 0px;
     }
 
     .hero-vid video,
@@ -794,8 +818,7 @@ footer img {
     }
 
     .course-grid-div {
-        width: 350px;
-        height: 350px;
+      
         text-align: center;
     }
 
