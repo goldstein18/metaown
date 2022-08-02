@@ -19,9 +19,11 @@
     --footer:rgba(17, 14, 14, 0.982);
 
 }
-
-body,
-html {
+html{
+   margin: 0;
+   padding: 0;
+}
+body{
     height: 100%;
     background: var(--bg-clr);
     width: 100%;
@@ -99,7 +101,7 @@ header .header-logo img {
 }
 .hero-outer-section{
     width: 100%;
-    background: rgb(15, 14, 14);
+    background: var(--bg-clr);
 }
 
 .hero-section {
@@ -192,7 +194,7 @@ height: 440px;
 
 /* courses */
 .courses-section{
-    background-color: rgb(15, 14, 14);
+    background-color: var(--bg-clr);
     width: 100%;
 }
 .courses_outer {
@@ -283,7 +285,7 @@ height: 440px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(15, 14, 14);
+    background-color: var(--bg-clr);
 
     padding: 50px;
 }
@@ -325,8 +327,8 @@ height: 440px;
 }
 
 .hero-img img {
-    height: 450px;
-    width: 650px;
+    height: 550px;
+    width: 350px;
 
 }
 
@@ -338,7 +340,8 @@ height: 440px;
 /* enterpreneur */
 .enterpreneur-section{
     width: 100%;
-    background-color: #001C26;
+    /* background-color: #001C26; */
+    background-color: var(--bg-clr);
     padding: 20px;
 }
 
@@ -475,7 +478,8 @@ h2 {
 .subscription {
     padding: 50px;
     width: 100%;
-    background: #01222e;
+    /* background: #01222e; */
+    background-color: var(--bg-clr);
 }
 
 .includes {
@@ -560,10 +564,10 @@ footer img {
 /* last footer */
 
 .last-footer {
-    background: var(--footer);
+    background: var(--bg-clr);
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: end;
     height: 100px;
 }
 
@@ -719,6 +723,10 @@ footer img {
         text-align: center;
         grid-row-gap: 50px;
         margin: auto;
+    }
+    .hero-img img{
+        height: auto;
+        width: 100%;
     }
 
     .author-profiles {
